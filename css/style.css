@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 75vh;
+}
+
+.imgbox {
+    background-image: url(../img/indeximg.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    
+}
+
+.headbox {
+    display: inline;
+    float: left;
+    
+    /*grid-template-columns: auto 10vw 10vw 10vw 10vw 10vw auto;*/
+}
+
+.start {
+    margin-right: 12vw;
+}
+
+nav {
+    height: 10vh;
+    vertical-align: middle;
+}
