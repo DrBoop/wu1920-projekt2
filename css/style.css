@@ -4,28 +4,68 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 75vh;
+    grid-template-rows: 8vh;
 }
 
-.imgbox {
-    background-image: url(../img/indeximg.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    
-}
+/*background-image: url(../img/indeximg.jpg);
+background-repeat: no-repeat;*/
 
-.headbox {
-    display: inline;
-    float: left;
-    
-    /*grid-template-columns: auto 10vw 10vw 10vw 10vw 10vw auto;*/
-}
-
-.start {
-    margin-right: 12vw;
+header {
+    background-color: #133017;
+    padding-top: 2vh;
+    padding-right: 2vw;
 }
 
 nav {
-    height: 10vh;
     vertical-align: middle;
+    color: white;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+}
+
+#ham-button {
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+#close {
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+#ham-menu{
+    display: none;
+}
+
+#ham-menu.active {
+    display: block;
+}
+
+.menu {
+    position: fixed;
+    float: right;
+    height: 100%;
+    width: 75%;
+    right: 0;
+    top: 0;
+    background-color: tomato;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        visibility: hidden;
+        background-color: transparent;
+    }
 }
