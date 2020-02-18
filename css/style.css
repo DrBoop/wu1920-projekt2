@@ -4,15 +4,12 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 8vh;
+    grid-template-rows: 8vh 60vh;
 }
 
-/*background-image: url(../img/indeximg.jpg);
-background-repeat: no-repeat;*/
-
 header {
-    background-color: #133017;
-    padding-top: 2vh;
+    background-color: #E91E63;
+    padding-top: 1.1vh;
     padding-right: 2vw;
 }
 
@@ -21,43 +18,69 @@ nav {
     color: white;
 }
 
-
-
-button {
-    border: none;
-    outline: none;
-}
-
-#ham-button {
-    float: right;
-    top: 0;
-    right: 0;
-}
-
-#close {
-    float: right;
-    top: 0;
-    right: 0;
-}
-
-#ham-menu{
+.menu{
     display: none;
 }
 
-#ham-menu.active {
-    display: block;
+.button {
+    position: fixed;
+    float: right;
+    right: 0;
+    top: 0;
+    margin-top: 1.4vh;
+    margin-right: 3vw;
 }
 
-.menu {
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.2s;
+  }
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu.active {
+    display: block;
+    background-color: tomato;
     position: fixed;
     float: right;
     height: 100%;
     width: 75%;
     right: 0;
     top: 0;
-    background-color: tomato;
 }
 
+.logo {
+    height: 6.4vh;
+    margin-left: 1vw;
+}
+
+
+#front-image {
+    background-image: url(../img/indeximg.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-size: 200%;
+}
+
+h1 {
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+    font-family: 'Raleway';
+    text-shadow: black 0.5vh 0.5vh;
+}
 
 
 
@@ -69,3 +92,4 @@ button {
         background-color: transparent;
     }
 }
+
