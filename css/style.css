@@ -1,5 +1,10 @@
 body {
     margin: 0px;
+    width: 100%;
+}
+
+p {
+    margin: 0;
 }
 
 .container {
@@ -41,18 +46,39 @@ nav {
 
 .change .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: white;
 }
 
 .change .bar2 {opacity: 0;
+    background-color: white;
 }
 
 .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: white;
+}
+
+.menu{
+    transform: translateX(115%);
+    transition: transform .5s ease;
+    display: block;
+    background-color: #280511;
+    position: fixed;
+    float: right;
+    height: 100%;
+    width: 75%;
+    right: 0;
+    top: 0;
+}
+
+.menu.show{
+    transform: translateX(0);
 }
 
 .menu.active {
     display: block;
-    background-color: tomato;
+    background-color: black;
+    color: white;
     position: fixed;
     float: right;
     height: 100%;
@@ -63,8 +89,30 @@ nav {
 
 .logo {
     height: 6.4vh;
-    margin-left: 1vw;
+    margin-left: 1.6vw;
+    margin-top: -0.25vh;
 }
+
+.line {
+    margin-top: 8vh;
+    height: 2px;
+    width: 100%;
+    background-color: #E91E63;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.menu p {
+
+    font-size: 5vh;
+    padding-left: 5vw;
+    margin-top: 5vh;
+}
+
 
 
 #front-image {
@@ -72,11 +120,12 @@ nav {
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-size: 200%;
+    width: 100%;
 }
 
 h1 {
     color: white;
-    font-size: 7vh;
+    font-size: 12vw;
     text-align: center;
     font-family: 'Raleway';
     text-shadow: black 0.5vh 0.5vh;
