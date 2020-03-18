@@ -155,6 +155,28 @@ h3 {
     margin-bottom: 1vh;
 }
 
+.images {
+    width: 100%;
+}
+
+.stext{
+    text-align: right;
+    margin-right: 2vw;
+    font-size: 1.5vh;
+    color: rgb(87, 87, 87);
+}
+
+ol {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    padding: 0px;
+}
+
+li a img {
+    height: 25vh;
+}
+
 @media only screen and (min-width: 600px) {
     body {
         visibility: hidden;
