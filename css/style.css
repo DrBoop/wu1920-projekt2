@@ -11,7 +11,7 @@ body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-rows: 8vh 55vh;
+    grid-template-rows: 8vh 45vh;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     background-color: #E91E63;
-    padding-top: 1.1vh;
+    padding-top: 0.5vw;
     padding-right: 2vw;
     height: 7vh;
     width: 100%;
@@ -52,7 +52,8 @@ nav {
     background-color: white;
 }
 
-.change .bar2 {opacity: 0;
+.change .bar2 {
+    opacity: 0;
     background-color: white;
 }
 
@@ -83,7 +84,6 @@ nav {
     height: 6.4vh;
     top: 0.75vh;
     left: 2vw;
-    z-index: 10;
 }
 
 .line {
@@ -91,6 +91,10 @@ nav {
     height: 2px;
     width: 100%;
     background-color: #E91E63;
+}
+
+p {
+    font-family: 'Roboto';
 }
 
 .menu a {
@@ -106,14 +110,11 @@ nav {
     margin-top: 5vh;
 }
 
-
-
-#front-image {
+#hero-image {
     background-image: url(../img/indeximg.png);
-    background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-size: 200%;
-    width: 100%;
+    background-position-x: 80%;
+    background-size: 300%;
+    height: 90%;
     padding-top: 6.5vh;
 }
 
@@ -123,11 +124,16 @@ h1 {
     text-align: center;
     font-family: 'Raleway';
     text-shadow: black 0.5vh 0.5vh;
+    padding-bottom: 2vw;
+    margin: 0;
+    line-height: 20vw;
 }
 
 h2 {
+    margin-top: 8vw;
     text-align: center;
     font-size: 7vw;
+    font-family: 'Roboto';
 }
 
 .main_text {
@@ -136,14 +142,19 @@ h2 {
     font-size: 4vw;
 }
 
-#disc {
-    width: 100%; 
-    margin-bottom: -1vh;
+.discord {
+    text-align: center;
+}
+
+.discord iframe {
+    width: 90%;
 }
 
 h3 {
     text-align: center;
     margin-bottom: 1vh;
+    font-family: 'Roboto';
+    margin-top: 10vw;
 }
 
 .offset {
@@ -160,13 +171,14 @@ h3 {
     margin-right: 5vw;
     margin-top: 0.5vh;
     margin-bottom: 1vh;
+    text-align: center;
 }
 
 .images {
     width: 100%;
 }
 
-.stext{
+.side-text{
     text-align: right;
     margin-right: 2vw;
     font-size: 1.5vh;
@@ -185,17 +197,31 @@ li a img {
     height: 25vh;
 }
 
-.pc {
+.invisible-block {
     display: none;
 }
 
-.pch {
+.header-link {
     display: none;
 }
 
-@media only screen and (min-width: 600px) {
+.body-background {
+    background-color: aliceblue;
+}
+
+
+@media only screen and (min-width: 800px) {
     .container {
         display: block;
+    }
+
+    .textoffset {
+        margin: 0;
+        margin-bottom: 1vw;
+    }
+
+    .body-background {
+        background-color: rgb(177, 255, 229);
     }
 
     main {
@@ -204,10 +230,13 @@ li a img {
     }
 
     h1 {
-        font-size: 10vh;
+        font-size: 5vw;
+        margin-top: 4vw;
+        padding-bottom: 4vw;
+        line-height: 10vw;
     }
 
-    #front-image {
+    #hero-image {
         background-size: 100%;
         background-position-y: 10%;
     }
@@ -216,70 +245,74 @@ li a img {
         text-align: center;
         position: absolute;
         display: grid;
-        grid-template-columns: auto 11vw 11vw 11vw 11vw 11vw auto;
+        grid-template-columns: 12vw 11vw 11vw 11vw 11vw 11vw 11vw auto;
         padding-right: 0px;
+        height: 3.5vw;
     }
 
     #mheader {
-        background-color: transparent;
+        background-color: rgba(233, 30, 98, 0.473);
+        padding-top: 0.5vw;
     }
 
     .logo {
-        position: absolute;
+        width: 100%;
+        z-index: 10;
+        padding-left: 4px;
+        display: block;
+        position: initial;
+        height: 90%;
     }
 
     .button {
         display: none;
     }
 
-    .pc {
+    .invisible-block {
         display: block;
     }
 
-    .pch {
+    .header-link {
         display: block;
         margin-top: 1vh;
-        font-size: 3vh;
+        font-size: 1.5vw;
         text-decoration: none;
         color: white;
         border-left: 1px solid white;
     }
 
-    #phci {
+    #first-header-link {
         border: none;
     }
 
     h2 {
-        font-size: 5vh;
+        font-size: 2.5vw;
+        margin: 1vw;
+    }
+
+    h3 {
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 1.75em;
     }
 
     .main_text {
-        font-size: 3.2vh;
-    }
-
-    #disc {
-        width: 40%;
-
-    }
-
-    #adisc {
-        margin-left: 30%;
-        margin-right: 30%;
+        font-size: 1.3vw;
     }
 
     header p {
-        margin-top: 0px;
+        margin: 0;
     }
 
-    #yi {
+    #other-info-container {
         display: grid;
         margin-left: 10%;
         margin-right: 10%;
-        margin-bottom: 7vh;
         grid-template-areas: 
         'r1 r2'
         't1 t2';
         text-align: center;
+        grid-gap: 5%;
     }
 
     .images {
@@ -288,15 +321,18 @@ li a img {
         margin-right: 30%;
     }
 
-    #inf {
+    .rules-container {
         display: grid;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 5vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2vw;
         grid-template-areas: 
-        'r1 r2 r3'
-        't1 t2 t3';
+        'r1 r2'
+        't1 t2'
+        'r3 r4'
+        't3 t4';
         text-align: center;
+        grid-gap: 5%;
     }
 
     #inf2 {
@@ -309,32 +345,90 @@ li a img {
         text-align: center;
     }
 
-    #moteanime .textoffset {
+    #anime-container {
         margin-left: 15%;
         margin-right: 15%;
         text-align: center;
-        margin-bottom: 2vh;
+        background-color: aliceblue;
     }
 
-    .stext {
-        margin-right: 18%;
+    #anime-text-container {
+        margin-bottom: 2vw;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .shead {
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+
+    .discord iframe {
+        width: 30%;
     }
 
     ul {
         grid-template-columns: auto auto auto;
         margin-left: 10%;
         margin-right: 10%;
-        grid-gap: 1vw;
+        grid-gap: 3vw;
     }
 
     li a img {
-        height: 45vh;
+        height: 20vw;
     }
 
-    #na {
-        height: 75vh;
+    #current-anime {
+        height: 30vw;
     }
 
+    .rules-page-container {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: aliceblue;
+    }
+
+    .history-page-container {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: aliceblue;
+    }
+
+    #last-rule {
+        margin-top: 1vw;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    #last-rule p {
+        margin: 0;
+    }
+
+    section .textoffset {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1vw;
+    }
+
+    .text-container {
+        background-color: rgb(255, 171, 220); 
+        border-radius: 1vw;
+        border: solid rgb(255, 171, 220) 1vw;
+    }
+
+    .mote-container {
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: aliceblue;
+    }
+
+    #mote-text-container {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
 }
 
 

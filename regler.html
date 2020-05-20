@@ -7,18 +7,19 @@
     <title>Regler</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
+<body class="body-background">
     <header>
-        <div class="pc"></div>
-        <p><a id="phci" class="pch" href="index.html">Startsida</a></p>
-        <p><a class="pch" href="regler.html">Regler</a></p>
-        <p><a class="pch" href="mote.html">Möte Info</a></p>
-        <p><a class="pch" href="anime.html">Animekultur</a></p>
-        <p><a class="pch" href="historik.html">Historik</a></p>
-        <div class="pc"></div>
-
         <img class="logo" src="img/logo.png" alt="">
+        <div class="invisible-block"></div>
+        <p><a id="first-header-link" class="header-link" href="index.html">Startsida</a></p>
+        <p><a class="header-link" href="regler.html">Regler</a></p>
+        <p><a class="header-link" href="mote.html">Möte Info</a></p>
+        <p><a class="header-link" href="anime.html">Animekultur</a></p>
+        <p><a class="header-link" href="historik.html">Historik</a></p>
+        <div class="invisible-block"></div>
+
         <div class="menu">
             <div class="line"></div>
             <p><a href="index.html">Startsida</a></p>
@@ -35,27 +36,35 @@
     </header>
 
     <main>
-        <article>
+        <article class="rules-page-container">
             <h2 class="offset">Regler</h2>
 
             <img class="images" src="img/regler.gif" alt="">
 
             <h3>Generellt</h3>
-                <div id="inf">
-                <p style="grid-area: r1;" class="shead"><strong>mods bestämmer</strong></p>
-                <p class="textoffset">har ingen rättegång med advokater för att bryta regler, om du börjar käbbla eller argumentera om det är regelbryte eller inte så förvänta dig inte mer än att bli kickad.</p>
-                
-                <p style="grid-area: r2;" class="shead"><strong>var schyst</strong></p>
-                <p class="textoffset">ingen diskriminering, mobbning eller liknande, om skämt inte uppskattas respektera då personen och börja inte argumentera om att det bara är ett skämt (dock är det såklart helt okej att argumentera med varandra så länge ingen tar illa upp).</p>
-                
-                <p style="grid-area: r3;" class="shead"><strong>ingen hentai</strong></p>
-                <p class="textoffset">detta är en skol klubb, ingen hentai på servern, att diskutera ecchi anime och skicka ecchi bilder i art kanalerna är okej, dock kommer vi inte kolla på ecchi på klubben.</p>
-                </div>
+                <section class="rules-container">
+                    <div class="text-container">
+                    <p style="grid-area: r1;" class="shead"><strong>mods bestämmer</strong></p>
+                    <p class="textoffset">har ingen rättegång med advokater för att bryta regler, om du börjar käbbla eller argumentera om det är regelbryte eller inte så förvänta dig inte mer än att bli kickad.</p>
+                    </div>
 
-                <div id="inf2">
-                <p style="grid-area: r4;" class="shead"><strong>stör inte</strong></p>
-                <p style="grid-area: t4;" class="textoffset">alla är välkommna på klubben, även om det är tänkt för anime/manga intreserade men om ni stör så får ni gå därifrån</p>
-                
+                    <div class="text-container">
+                    <p style="grid-area: r2;" class="shead"><strong>var schyst</strong></p>
+                    <p class="textoffset">ingen diskriminering, mobbning eller liknande, om skämt inte uppskattas respektera då personen och börja inte argumentera om att det bara är ett skämt (dock är det såklart helt okej att argumentera med varandra så länge ingen tar illa upp).</p>
+                    </div>
+
+                    <div class="text-container">
+                    <p style="grid-area: r3;" class="shead"><strong>ingen hentai</strong></p>
+                    <p class="textoffset">detta är en skol klubb, ingen hentai på servern, att diskutera ecchi anime och skicka ecchi bilder i art kanalerna är okej, dock kommer vi inte kolla på ecchi på klubben.</p>
+                    </div>
+
+                    <div class="text-container">
+                    <p style="grid-area: r4;" class="shead"><strong>stör inte</strong></p>
+                    <p style="grid-area: t4;" class="textoffset">alla är välkommna på klubben, även om det är tänkt för anime/manga intreserade men om ni stör så får ni gå därifrån</p>
+                    </div>
+                </section>
+
+                <div class="text-container" id="last-rule">
                 <p style="grid-area: r5;" class="shead"><strong>ingen gore</strong></p>
                 <p style="grid-area: t5;" class="textoffset">ingen sorts gore är tillåten, varken video eller bild</p>
                 </div>
@@ -65,13 +74,17 @@
 
                 <h2>Yterligare information</h2>
 
-                <div id="yi">
+                <div id="other-info-container">
+                <div class="text-container">
                 <h3>Upplägg</h3>
                 <p class="textoffset">Ofta kommer det folk lite innan mötet så vi pratar ett tag och när mötet börjar kollar vi på den anime vi kommit överens om. Det finns även fika (för de som faktiskt stannar på klubben :p)
                     All info om mötestider finns i discordkanalen #möte-info</p>
+                </div>
 
+                <div class="text-container">
                 <h3 style="grid-area: r1">info om discord</h3>
                 <p class="textoffset">vi har två bottar: @Mantaro och @Tatsu på servern, deras kommandon sitter pinnade i #🅱ot-spam. Om du har ideer för förbättringar så skicka dom till gärna till något mod på animeklubben! tack så mycket för att du tatt tiden att läsa allt!</p>
+                </div>    
                 </div>
         </article>
     </main>

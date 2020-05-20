@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: aliceblue;">
 
 <div class="container">
-    <img class="logo" src="img/logo.png" alt="">
     <header id="mheader">
-        <div class="pc"></div>
-        <p><a id="phci" class="pch" href="index.html">Startsida</a></p>
-        <p><a class="pch" href="regler.html">Regler</a></p>
-        <p><a class="pch" href="mote.html">Möte Info</a></p>
-        <p><a class="pch" href="anime.html">Animekultur</a></p>
-        <p><a class="pch" href="historik.html">Historik</a></p>
-        <div class="pc"></div>
+        <img class="logo" src="img/logo.png" alt="">
+        <div class="invisible-block"></div>
+        <p><a id="first-header-link" class="header-link" href="index.html">Startsida</a></p>
+        <p><a class="header-link" href="regler.html">Regler</a></p>
+        <p><a class="header-link" href="mote.html">Möte Info</a></p>
+        <p><a class="header-link" href="anime.html">Animekultur</a></p>
+        <p><a class="header-link" href="historik.html">Historik</a></p>
+        <div class="invisible-block"></div>
 
         <div class="menu">
             <div class="line"></div>
@@ -39,17 +40,19 @@
 
     <div></div>
 
-    <main id="front-image">
-        <h1>Välkommen till</h1>
-        <h1>Animeklubbens</h1>
-        <h1>Webbsida</h1>
+    <main id="hero-image">
+        <h1>Välkommen till<br/>
+        Animeklubbens<br/>
+        Webbsida</h1>
     </main>
 
     <h2>Generell Info</h2>
     <p class="main_text">I Animeklubben kan du hitta allt ifrån casual anime och manga till cosplay och utklädnader.</p>
 
     <h3>Gå med i vår discord!</h3>
-    <a id="adisc" href="https://discord.gg/kyG8C69"><img id="disc" src="img/discord.png" alt="discord länk"></a>
+    <div class="discord">
+    <iframe src="https://discordapp.com/widget?id=514850079283347477&theme=dark" height="550vw" allowtransparency="true" frameborder="0"></iframe>
+    </div>
 
 </div>
 
